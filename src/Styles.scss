@@ -1,0 +1,89 @@
+$primary: #0e080c;
+$secondary: #d4a373;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+header {
+  background: $primary;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.banner {
+  background: url("https://images.unsplash.com/photo-1615874959474-d609b6b7b1c8?auto=format&fit=crop&w=1200&q=80")
+    no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+.products {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  h3 {
+    margin: 15px 0 10px;
+  }
+
+  button {
+    background: $secondary;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($secondary, 10%);
+    }
+  }
+}
+
+footer {
+  background: $primary;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
